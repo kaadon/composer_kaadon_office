@@ -1,0 +1,27 @@
+{
+  "name": "kaadon/office",
+  "type": "library",
+  "description": "kaadon Office-LIBRARY for PHP",
+  "keywords": [
+    "Sms",
+    "kaadon"
+  ],
+  "homepage": "http://developer.kaadon.com/",
+  "license": "Apache-2.0",
+  "require": {
+    "PHP": ">=8.1",
+    "phpoffice/phpspreadsheet": "^2.2"
+  },
+  "authors": [
+    {
+      "name": "kaadon",
+      "email": "kaadon.com@gmail.com",
+      "homepage": "https://www.kaadon.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Kaadon\\Office\\": "src"
+    }
+  }
+}
