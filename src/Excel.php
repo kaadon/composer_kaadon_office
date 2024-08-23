@@ -103,6 +103,8 @@ class Excel
         } else {
             header("Content-Type: $contentType");
             header("Content-Disposition: attachment; filename=\"{$filename}.{$extension}\"");
+            header("Content-extension: $extension");
+            header("Content-filename: $filename");
             header('Cache-Control: max-age=0');
             $writer->save('php://output');
             exit();
